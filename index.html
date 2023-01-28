@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Sample Task</title>
+   
+  </head>
+  <body>
+    <div id="container">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search for a country..."
+      />
+      <div class="form-control space-between" style="margin-top: 10px">
+        <label class="switch">
+          <input
+            type="checkbox"
+            id="filter-selected"
+            onchange="filterCountries()"
+          />
+          <span class="slider"></span>
+          <span class="label"> Show Selected Only </span>
+        </label>
+        <!-- <label><input type="checkbox" id="filter-selected" onchange="filterCountries()"> Show only selected countries</label> -->
+
+        <button id="clear-button">Clear All</button>
+      </div>
+
+      <ul id="country-list">
+        <li>
+          <label class="check-box">
+            <input class="country-checkbox" type="checkbox">
+            <div class="checkmark"></div>
+          </label>
+          <label class="country-label">Afghanistan</label>
+        </li>
+        <li>
+          <label class="check-box">
+            <input class="country-checkbox" type="checkbox">
+            <div class="checkmark"></div>
+          </label>
+          <label class="country-label">Albania</label>
+        </li>
+        <li>
+       <label class="check-box">
+            <input class="country-checkbox" type="checkbox">
+            <div class="checkmark"></div>
+          </label>
+          <label class="country-label">pakistan</label>
+        </li>
+        <li>
+       <label class="check-box">
+            <input class="country-checkbox" type="checkbox" disabled checked>
+            <div class="checkmark"></div>
+          </label>
+          <label class="country-label">india</label>
+        </li>
+        <li>
+          <label class="check-box">
+            <input class="country-checkbox" type="checkbox" disabled checked>
+            <div class="checkmark"></div>
+          </label>
+          <label class="country-label">turkey</label>
+        </li>
+        <li>
+       <label class="check-box">
+            <input class="country-checkbox" type="checkbox">
+            <div class="checkmark"></div>
+          </label>
+          <label class="country-label">algeria</label>
+        </li>
+        <li>
+       <label class="check-box">
+            <input class="country-checkbox" type="checkbox">
+            <div class="checkmark"></div>
+          </label>
+          <label class="country-label">china</label>
+        </li>
+        <li>
+       <label class="check-box">
+            <input class="country-checkbox" type="checkbox">
+            <div class="checkmark"></div>
+          </label>
+          <label class="country-label">new zealand</label>
+        </li>
+      </ul>
+      <div class="form-control">
+        <button class="save">Save</button>
+      </div>
+    </div>
+
+
+</body>
+<script src="main.js"></script>
+
+</html>
